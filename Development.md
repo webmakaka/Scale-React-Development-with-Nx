@@ -2,19 +2,7 @@
 
 <br/>
 
-<a href="https://egghead.io/playlists/scale-react-development-with-nx-4038">Videos</a>
 
-<br/>
-
-**Original src:**
-
-https://github.com/eggheadio/eggheadio-course-notes/tree/master/scale-react-development-with-nx
-
-<br/>
-
-### [Development Step By Step](./Development.md)
-
-<br/>
 
 <br/>
 
