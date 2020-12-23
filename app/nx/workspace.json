@@ -8,22 +8,15 @@
       "targets": {
         "build": {
           "executor": "@nrwl/web:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "outputPath": "dist/apps/store",
             "index": "apps/store/src/index.html",
             "main": "apps/store/src/main.tsx",
             "polyfills": "apps/store/src/polyfills.ts",
             "tsConfig": "apps/store/tsconfig.app.json",
-            "assets": [
-              "apps/store/src/favicon.ico",
-              "apps/store/src/assets"
-            ],
-            "styles": [
-              "apps/store/src/styles.scss"
-            ],
+            "assets": ["apps/store/src/favicon.ico", "apps/store/src/assets"],
+            "styles": ["apps/store/src/styles.scss"],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
           },
@@ -55,7 +48,8 @@
         "serve": {
           "executor": "@nrwl/web:dev-server",
           "options": {
-            "buildTarget": "store:build"
+            "buildTarget": "store:build",
+            "port": 8080
           },
           "configurations": {
             "production": {
@@ -66,16 +60,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/store/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/store/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/store"
-          ],
+          "outputs": ["coverage/apps/store"],
           "options": {
             "jestConfig": "apps/store/jest.config.js",
             "passWithNoTests": true
@@ -104,9 +94,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/store-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/store-e2e/**/*.{js,ts}"]
           }
         }
       }

@@ -30,6 +30,28 @@ Would you like to add React Router to this application? (y/N) [Y]
 
 <br/>
 
+### 03 [skipped] Generate new Projects for Nx with Nx Console
+
+<br/>
+
+### 04 Running a React App in the Browser with Nx
+
+    $ npx nx run store:serve
+
+http://localhost:8080/
+
+<br/>
+
+### 05 Install and use external npm packages in an Nx Workspace
+
+    $ npm install @material-ui/core
+
+<br/>
+
+![Application](/img/pic-01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

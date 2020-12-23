@@ -12,6 +12,10 @@ https://github.com/eggheadio/eggheadio-course-notes/tree/master/scale-react-deve
 
 <br/>
 
+**Clear the cookies to watch videos on eghead website without registration!**
+
+<br/>
+
 ### [Development Step By Step](./Development.md)
 
 <br/>
