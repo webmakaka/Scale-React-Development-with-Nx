@@ -16,6 +16,20 @@ app]
 
 <br/>
 
+### 02 Generate a new React app with Nx
+
+    $ cd nx
+    $ npm install @nrwl/react
+    $ npx nx list @nrwl/react
+    $ npx nx generate @nrwl/react:application store
+
+```
+Which stylesheet format would you like to use? [SASS]
+Would you like to add React Router to this application? (y/N) [Y]
+```
+
+<br/>
+
 ---
 
 <br/>
