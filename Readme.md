@@ -2,7 +2,7 @@
 
 <br/>
 
-<a href="https://egghead.io/playlists/scale-react-development-with-nx-4038">Videos</a>
+<a href="https://egghead.io/playlists/scale-react-development-with-nx-4038">Instructions and Videos</a>
 
 <br/>
 

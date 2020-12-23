@@ -2,7 +2,17 @@
 
 <br/>
 
+### 01 Create a new empty Nx Workspace
 
+    $ cd app
+    $ npx create-nx-workspace nx
+
+```
+? What to create in the new workspace [empty]
+
+❯ Yes [Faster builds, run details, Github integration. Learn more at https://nx.
+app]
+```
 
 <br/>
 
