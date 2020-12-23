@@ -52,6 +52,14 @@ http://localhost:8080/
 
 <br/>
 
+### 06 Add Styling to a React app inside an Nx workspace
+
+<br/>
+
+![Application](/img/pic-02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

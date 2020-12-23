@@ -1,13 +1,13 @@
-import React from 'react';
-
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { getAllGames } from 'apps/store/src/app/fake-api';
+import React from 'react';
+import './app.scss';
 
-export function App() {
+export const App = () => {
   return (
     <div className="container">
       <div className="games-layout">
@@ -41,6 +41,6 @@ export function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

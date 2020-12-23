@@ -1,22 +1,22 @@
 const games = [
   {
-    id: 'purrfection',
-    name: 'Purrfection',
+    id: '1',
+    name: 'Settlers in the Can',
     image: '/assets/cat.png',
     description: 'A cat grooming contest goes horribly wrong.',
     price: 45,
     rating: Math.random(),
   },
   {
-    id: 'purrfection',
-    name: 'Purrfection',
+    id: '2',
+    name: 'Chess Pie',
     image: '/assets/cat.png',
     description: 'A cat grooming contest goes horribly wrong.',
     price: 45,
     rating: Math.random(),
   },
   {
-    id: 'purrfection',
+    id: '3',
     name: 'Purrfection',
     image: '/assets/cat.png',
     description: 'A cat grooming contest goes horribly wrong.',
