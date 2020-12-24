@@ -8,15 +8,22 @@
       "targets": {
         "build": {
           "executor": "@nrwl/web:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/store",
             "index": "apps/store/src/index.html",
             "main": "apps/store/src/main.tsx",
             "polyfills": "apps/store/src/polyfills.ts",
             "tsConfig": "apps/store/tsconfig.app.json",
-            "assets": ["apps/store/src/favicon.ico", "apps/store/src/assets"],
-            "styles": ["apps/store/src/styles.scss"],
+            "assets": [
+              "apps/store/src/favicon.ico",
+              "apps/store/src/assets"
+            ],
+            "styles": [
+              "apps/store/src/styles.scss"
+            ],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
           },
@@ -60,12 +67,16 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/store/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/store/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/store"],
+          "outputs": [
+            "coverage/apps/store"
+          ],
           "options": {
             "jestConfig": "apps/store/jest.config.js",
             "passWithNoTests": true
@@ -94,7 +105,34 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/store-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/store-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    },
+    "store-ui-shared": {
+      "root": "libs/store/ui-shared",
+      "sourceRoot": "libs/store/ui-shared/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/store/ui-shared/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/store/ui-shared"
+          ],
+          "options": {
+            "jestConfig": "libs/store/ui-shared/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

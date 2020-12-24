@@ -60,6 +60,28 @@ http://localhost:8080/
 
 <br/>
 
+### 07 Configure Assets for my React app in an Nx Workspace
+
+<br/>
+
+### 08 Create a Shared React Library in an Nx Workspace
+
+    $ npx nx generate @nrwl/react:lib ui-shared --directory=store
+
+We removed generated files from folder libs/ui-shared/src/
+
+    $ npx nx generate @nrwl/react:component header --project=store-ui-shared
+
+```
+Should this component be exported in the project? [Yes]
+```
+
+<br/>
+
+![Application](/img/pic-03.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
