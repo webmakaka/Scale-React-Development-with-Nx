@@ -108,6 +108,27 @@ Should this component be exported in the project? [Yes]
 
 <br/>
 
+### 12 Create an Express Backend API in an Nx Workspace
+
+    $ npm install --save-dev @nrwl/express
+    $ npx nx generate @nrwl/express:application api --frontendProject=store
+
+    $ npx nx run api:serve
+
+<br/>
+
+    http://localhost:3333/api/games/
+
+<br/>
+
+![Application](/img/pic-06.png?raw=true)
+
+<br/>
+
+    http://localhost:3333/api/games/chess-pie
+
+<br/>
+
 ---
 
 <br/>
