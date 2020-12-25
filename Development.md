@@ -78,14 +78,33 @@ Should this component be exported in the project? [Yes]
 
 <br/>
 
+![Application](/img/pic-03.png?raw=true)
+
+<br/>
+
 ### 09 Generate a TypeScript library in an Nx Workspace
 
     $ npx nx generate @nrwl/workspace:lib util-formatters --directory=store
 
+<br/>
+
+### 10 Use the Nx Dependency Graph to Visualize your Monorepo Structure
+
+    $ npx nx dep-graph
 
 <br/>
 
-![Application](/img/pic-03.png?raw=true)
+![Application](/img/pic-04.png?raw=true)
+
+<br/>
+
+### 11 Create React Feature Libraries in an Nx Workspace
+
+    $ npx nx generate @nrwl/react:lib feature-game-detail --directory=store --appProject=store
+
+<br/>
+
+![Application](/img/pic-05.png?raw=true)
 
 <br/>
 
