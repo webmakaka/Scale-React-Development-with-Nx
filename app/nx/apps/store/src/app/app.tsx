@@ -4,6 +4,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Header } from '@nx/store/ui-shared';
+import { formatRating } from '@nx/store/util-formatters';
 import { getAllGames } from 'apps/store/src/app/fake-api';
 import React from 'react';
 import './app.scss';
@@ -39,7 +40,7 @@ export const App = () => {
                     component="p"
                     className="game-rating"
                   >
-                    <strong>Raing:</strong> {x.rating}
+                    <strong>Raing:</strong> {formatRating(x.rating)}
                   </Typography>
                 </CardContent>
               </CardActionArea>

@@ -78,6 +78,13 @@ Should this component be exported in the project? [Yes]
 
 <br/>
 
+### 09 Generate a TypeScript library in an Nx Workspace
+
+    $ npx nx generate @nrwl/workspace:lib util-formatters --directory=store
+
+
+<br/>
+
 ![Application](/img/pic-03.png?raw=true)
 
 <br/>
