@@ -10,8 +10,7 @@
 ```
 ? What to create in the new workspace [empty]
 
-❯ Yes [Faster builds, run details, Github integration. Learn more at https://nx.
-app]
+❯ Yes [Faster builds, run details, Github integration.
 ```
 
 <br/>
@@ -126,6 +125,20 @@ Should this component be exported in the project? [Yes]
 <br/>
 
     http://localhost:3333/api/games/chess-pie
+
+<br/>
+
+### 13 Use Run Commands to launch the API and App of an Nx Workspace
+
+    $ npx nx run-many --target=serve --projects=api,store --parallel=true
+
+OR
+
+    $ npx nx run store:serveAppAndApi
+
+<br/>
+
+### 14 Connect to an Express.js API from a React app in an Nx Workspace
 
 <br/>
 
