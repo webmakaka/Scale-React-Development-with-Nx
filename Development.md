@@ -142,6 +142,14 @@ OR
 
 <br/>
 
+### 15 Share and Reuse functionality with libraries in Nx
+
+<br/>
+
+![Application](/img/pic-07.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

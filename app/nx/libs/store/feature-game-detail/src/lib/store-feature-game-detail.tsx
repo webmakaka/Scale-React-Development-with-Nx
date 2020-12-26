@@ -2,9 +2,11 @@ import {
   Card,
   CardActionArea,
   CardContent,
+  CardMedia,
   Typography,
 } from '@material-ui/core';
-import React from 'react';
+import { formatRating } from '@nx/store/util-formatters';
+import React, { useEffect, useState } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
 type TParams = { id: string };
@@ -13,17 +15,70 @@ export interface StoreFeatureGameDetailProps
   extends RouteComponentProps<TParams> {}
 
 export const StoreFeatureGameDetail = (props: StoreFeatureGameDetailProps) => {
+  const [state, setState] = useState<{
+    data: any;
+    loadingState: 'success' | 'error' | 'loading';
+  }>({
+    data: {},
+    loadingState: 'success',
+  });
+
+  useEffect(() => {
+    setState({
+      ...state,
+      loadingState: 'loading',
+    });
+    const gameId = props.match.params.id;
+    fetch(`/api/games/${gameId}`)
+      .then((x) => x.json())
+      .then((res) => {
+        setState({
+          ...state,
+          data: res,
+          loadingState: 'success',
+        });
+      })
+      .catch((err) => {
+        setState({
+          ...state,
+          loadingState: 'error',
+        });
+      });
+  }, [props.match.params.id]);
+
   return (
     <div className="container">
-      <Card>
-        <CardActionArea>
-          <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
-              {props.match.params.id}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+      {state.loadingState === 'loading' ? (
+        'Loading...'
+      ) : state.loadingState === 'error' ? (
+        <div>Error fetching data</div>
+      ) : state.data == null ? (
+        ''
+      ) : (
+        <Card>
+          <CardActionArea>
+            <CardMedia
+              className="game-card-media"
+              component="img"
+              image={state.data.image}
+              title={state.data.name}
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {state.data.name}
+              </Typography>
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+                className="game-rating"
+              >
+                <strong>Rating:</strong> {formatRating(state.data.rating)}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      )}
     </div>
   );
 };
