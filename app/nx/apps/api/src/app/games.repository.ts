@@ -1,4 +1,6 @@
-const games = [
+import { Game } from '@nx/api/util-interface';
+
+const games: Game[] = [
   {
     id: 'settlers-in-the-can',
     name: 'Settlers in the Can',

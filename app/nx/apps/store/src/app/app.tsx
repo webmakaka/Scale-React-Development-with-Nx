@@ -3,6 +3,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import { Game } from '@nx/api/util-interface';
 import { StoreFeatureGameDetail } from '@nx/store/feature-game-detail';
 import { Header } from '@nx/store/ui-shared';
 import { formatRating } from '@nx/store/util-formatters';
@@ -14,7 +15,7 @@ export const App = () => {
   const history = useHistory();
 
   const [state, setState] = useState<{
-    data: any[];
+    data: Game[];
     loadingState: 'success' | 'error' | 'loading';
   }>({
     data: [],

@@ -150,6 +150,14 @@ OR
 
 <br/>
 
+### 16 Share code between a React Frontend and Node.js Backend Application in Nx
+
+    $ npx nx generate @nrwl/workspace:lib util-interface --directory=api
+
+    $ npx nx run store:serveAppAndApi
+
+<br/>
+
 ---
 
 <br/>

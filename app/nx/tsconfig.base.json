@@ -19,7 +19,8 @@
       "@nx/store/util-formatters": ["libs/store/util-formatters/src/index.ts"],
       "@nx/store/feature-game-detail": [
         "libs/store/feature-game-detail/src/index.ts"
-      ]
+      ],
+      "@nx/api/util-interface": ["libs/api/util-interface/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
