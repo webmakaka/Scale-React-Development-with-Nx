@@ -15,9 +15,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
 }));
-
-/* eslint-disable-next-line */
-export interface HeaderProps {}
+export interface HeaderProps {
+  title: string;
+}
 
 export const Header = (props: HeaderProps) => {
   const classes = useStyles();
@@ -26,7 +26,7 @@ export const Header = (props: HeaderProps) => {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          Board Game Hoard
+          {props.title}
         </Typography>
       </Toolbar>
     </AppBar>
