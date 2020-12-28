@@ -213,6 +213,21 @@ http://localhost:4400/
 
 <br/>
 
+### 22 Scale CI runs with Nx Affected Commands
+
+    // $ npx nx affected:dep-graph --base=<branch_name>
+    // $ npx nx affected:test --base=<branch_name>
+    // $ npx nx affected:lint --base=<branch_name>
+
+<br/>
+
+### 22 Speed up with Nx computation Caching
+
+    // $ npx nx affected:test --all
+    // $ npx nx affected:test --all --skip-nx-cache
+
+<br/>
+
 ---
 
 <br/>
