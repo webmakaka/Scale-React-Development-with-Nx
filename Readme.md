@@ -6,12 +6,6 @@
 
 <br/>
 
-**Original src:**
-
-https://github.com/eggheadio/eggheadio-course-notes/tree/master/scale-react-development-with-nx
-
-<br/>
-
 **Clear the cookies to watch videos on eghead website without registration!**
 
 <br/>

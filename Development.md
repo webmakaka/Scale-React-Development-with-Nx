@@ -198,6 +198,21 @@ http://localhost:4400/
 
 <br/>
 
+### 20 Building your React app with Nx
+
+    // I have an errors. Some simple issues with typescript
+    $ npx nx build store --configuration=production
+
+    $ npx nx build api --configuration=production
+
+<br/>
+
+### 21 Linting a React app with Nx
+
+    $ npx nx run store:lint
+
+<br/>
+
 ---
 
 <br/>

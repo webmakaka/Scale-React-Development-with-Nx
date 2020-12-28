@@ -23,25 +23,25 @@ export const App = () => {
   });
 
   useEffect(() => {
-    setState({
-      ...state,
+    setState((s) => ({
+      ...s,
       loadingState: 'loading',
-    });
+    }));
 
     fetch('/api/games')
       .then((x) => x.json())
       .then((res) => {
-        setState({
-          ...state,
+        setState((s) => ({
+          ...s,
           data: res,
           loadingState: 'success',
-        });
+        }));
       })
       .catch((err) => {
-        setState({
-          ...state,
+        setState((s) => ({
+          ...s,
           loadingState: 'error',
-        });
+        }));
       });
   }, []);
 
